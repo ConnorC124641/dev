@@ -1,0 +1,195 @@
+/* Fix for background layering */
+#tsparticles {
+    display: none; 
+}
+
+body {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 0 20px 20px 20px; 
+    position: relative;
+    margin: 0; 
+    
+    /* --- Original Animated Background CSS (Moving Dots/Pattern) --- */
+    background-image: radial-gradient(circle at 1px 1px, #fff 1px, transparent 0);
+    background-size: 40px 40px;
+    animation: moveBackground 2s linear infinite;
+}
+
+/* Define the animation */
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: 40px 40px; }
+}
+
+/* Header Style (Uses sans-serif) */
+h1 {
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #ecf0f1;
+    margin-top: 20px; 
+    margin-bottom: 30px;
+}
+
+/* --- BIG RED GN-MATH BUTTON STYLES (FINAL & GUARANTEED) --- */
+.gn-math-button-container {
+    margin-bottom: 30px;
+}
+
+.gn-math-button {
+    /* Big Red Style Overrides */
+    background-color: #e74c3c !important; /* Forces red background */
+    color: white !important; /* Forces white text */
+    
+    font-family: sans-serif !important; /* Matches other buttons/header */
+    font-size: 32px !important; /* Makes it big */
+    font-weight: bold !important;
+    border: none !important;
+    
+    /* Dimensions and Shadow */
+    padding: 15px 35px !important; 
+    border-radius: 10px !important; 
+    box-shadow: 0 6px #c0392b !important;
+    
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 1; 
+}
+
+.gn-math-button:hover {
+    background-color: #ff6e61 !important;
+}
+
+.gn-math-button:active {
+    transform: translateY(6px) !important;
+    box-shadow: 0 0px #c0392b !important;
+}
+/* ---------------------------------------------------------- */
+
+
+/* Your original game button styles (BLUE, sans-serif font) and Alignment */
+.game-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    row-gap: 15px;
+    column-gap: 8px;
+    
+    /* Alignment Fix */
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.game-buttons button {
+    background-color: #3498db;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px #2980b9;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    width: 200px;
+    text-align: center;
+}
+
+.game-buttons button:hover {
+    background-color: #3cb0fd;
+}
+
+.game-buttons button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0px #2980b9;
+}
+/* --- UNIVERSAL NAVIGATION BUTTON STYLES (Home & Games) --- */
+/* --- UNIVERSAL NAVIGATION BUTTON STYLES (Home & Games) --- */
+.nav-button-container {
+    /* Use position: absolute to stick the container to the top-left corner */
+    position: absolute; 
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    
+    /* CRITICAL FIX: Forces buttons into a horizontal row */
+    display: flex; 
+    gap: 10px; /* Space between the buttons */
+    
+    /* Resetting other properties from your old block */
+    text-align: left;
+    width: auto;
+}
+
+.nav-button {
+    /* *** MODIFIED: Removed position: fixed from the individual button *** */
+    
+    /* Same style properties as your blue game buttons */
+    background-color: #3498db; 
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px #2980b9;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    width: auto; 
+}
+
+.nav-button:hover {
+    background-color: #3cb0fd;
+}
+
+.nav-button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0px #2980b9;
+}
+.nav-button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0px #2980b9;
+}
+
+/* Style for the main content on the Home page */
+.home-content {
+    /* Adding padding to push content down so it doesn't hide behind the button */
+    padding-top: 80px; 
+    text-align: center;
+}
+
+.home-content h1 {
+    /* Reusing your existing H1 style for the home page header */
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #ecf0f1;
+    margin-bottom: 30px;
+}
+
+.home-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+/* --- New Subtitle Style (Really Big) --- */
+/* --- New Subtitle Style (Using Orbitron Font) --- */
+.subtitle {
+    font-family: 'Orbitron', sans-serif; /* *** FONT CHANGED TO ORBITRON *** */
+    font-size: 80px; 
+    color: #e74c3c; 
+    
+    letter-spacing: 5px; 
+    
+    margin-top: -50px; 
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); 
+}

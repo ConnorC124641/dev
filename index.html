@@ -1,132 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ixl</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Loading screen -->
-    <div id="loadingScreen">
-        <div class="loader"></div>
-    </div>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PowerSchool Grades and Attendance</title>
+        <link rel="stylesheet" href="styles.css">
+        
+       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="cdn.jsdelivr.net"></script>
 
-    <div class="main"></div>
+        <div id="tsparticles"></div>
+        
+        <div class="nav-button-container">
+    <a href="index.html">
+        <button type="button" class="nav-button">🏠 Home</button>
+    </a>
+    <a href="games.html">
+        <button type="button" class="nav-button">🎮 Games</button>
+    </a>
+    <a href="Games/test.html">
+        <button type="button" class="nav-button">🌐 Proxy</button>
+    </a>
+</div>
+        <main class="home-content">
+            <h1>HOME</h1>
+            
+            <h2 class="subtitle">Terra Ubg</h2>
+            <p>Terra Ubg is a collection of fun experiences for you to play!
+               We have the most popular and rarest games out there like throw
+                a potato. Proxy just added.
 
-    <h1>Welcome To mathpunch V3</h1>
-    <div class="button-container">
-        <h2>Games</h2>
-        <button class="game-button" data-url="https://mathpunch.github.io/grasshopper/">Roblox</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/panda/">BitLife</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/kitty/">Stickmanhook</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/dog/">Super Mario 64</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/bear/">Tiny Fishing</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/snake/">Tap Tap Shots</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/shark/">Drive Mad</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/zebra/">Emulator JS</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/turtle/">Wordle Unlimited</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/doggy/">Fruit Ninja</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/fox/">Rooftop Snipers</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/bat/">Tunnel Rush</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/wolf/">Burrito Bison</button>
-        <button class="game-button" data-url="https://mathpunch.github.io/monkey/">Trash Truck Simulator</button>
-
-        <h2>Games For Emulator JS</h2>
-        <button class="game-button" data-url="https://github.com/ixlmathgg/flashy/raw/main/Mario Kart.zip">DS: Mario Kart</button>
-        <button class="game-button" data-url="https://github.com/ixlmathgg/Licky/raw/main/Pokemon Red Fire.zip">GBA: Pokémon Red Fire</button>
-        <button class="game-button" data-url="https://github.com/mathpunch/didactic-fortnight/raw/refs/heads/main/LEGO Star Wars II.zip">GBA: Lego Star Wars II</button>
-
-        <h2>Proxy</h2>
-        <button class="game-button" data-url="http://campus.rocketpride.com">Server 1</button>
-        <button class="game-button" data-url="http://classroom.rocketpride.com">Server 2</button>
-        <button class="game-button" data-url="http://library.rocketpride.com">Server 3</button>
-        <button class="game-button" data-url="http://portal.rocketpride.com">Server 4</button>
-        <button class="game-button" data-url="http://scholar.rocketpride.com">Server 5</button>
-        <button class="game-button" data-url="http://academy.rocketpride.com">Server 6</button>
-        <button class="game-button" data-url="http://learn.rocketpride.com">Server 7</button>
-        <button class="game-button" data-url="http://projects.rocketpride.com">Server 8</button>
-        <button class="game-button" data-url="http://resources.rocketpride.com">Server 9</button>
-        <button class="game-button" data-url="http://studyhub.rocketpride.com">Server 10</button>
-
-        <h2>Extra</h2>
-        <button class="game-button" data-url="https://auditor.rocketpride.com">Another Unblocked Game Website</button>
-        <button class="game-button" data-url="about:blank">Nothing Here Yet</button>
-
-        <h2>MathPunch AI</h2>
-        <button class="game-button" data-url="https://solixmath.github.io/crab">Click Me</button>
-
-        <h2>Games Requests</h2>
-        <button class="game-button" data-url="https://docs.google.com/forms/d/e/1FAIpQLSc6PG1pB-SmSDqf_gJ_DYWV5HWFtGCcWpgGf2EaS0EpKcICqQ/viewform?usp=sf_link">Click Me</button>
-
-        <h2>Adblocker</h2>
-        <button class="game-button" data-url="https://www.icloud.com/shortcuts/60f5af18cbfe435f886450e6a4c332e5">Click Me</button>
-
-        <h2>Chatting</h2>
-        <button class="game-button" data-url="https://sites.google.com/view/mathpunch">Click Me</button>
-
-        <h2>Backup Links</h2>
-        <button class="game-button" data-url="https://extramath.github.io/">Click Me</button>
-        <button class="game-button" data-url="https://solixmath.github.io">Click Me</button>
-
-        <h2>Prank Shortcut</h2>
-        <button class="game-button" data-url="https://www.icloud.com/shortcuts/4e9a1be2aace434981f58226805be72f">Click Me</button>
-    </div>
-
-    <!-- Iframe container -->
-    <div id="iframeContainer">
-        <iframe id="gameIframe"></iframe>
-        <button id="closeIframe" onclick="closeGame()">X</button>
-    </div>
-
-    <footer>
-        Made By Ozzy
-    </footer>
-
-    <script>
-        // Disable scrolling during loading
-        window.onload = function() {
-            setTimeout(function() {
-                // Fade out the loading screen
-                document.getElementById('loadingScreen').classList.add('fadeOut');
-                // Enable scrolling once the loading screen fades out
-                document.body.style.overflow = 'auto';
-            }, 2000); // Wait for 2 seconds before fading out
-        };
-
-        // Function to load game in iframe
-        function loadGameInIframe(url) {
-            const iframeContainer = document.getElementById('iframeContainer');
-            const gameIframe = document.getElementById('gameIframe');
-            iframeContainer.style.display = 'block';
-            gameIframe.src = url;
-            document.querySelector('.button-container').style.display = 'none';
-            document.querySelector('h1').style.display = 'none';
-            document.querySelectorAll('h2').forEach((h2) => {
-                h2.style.textAlign = 'left';
-            });
-        }
-
-        // Function to close the game iframe
-        function closeGame() {
-            const iframeContainer = document.getElementById('iframeContainer');
-            const gameIframe = document.getElementById('gameIframe');
-            iframeContainer.style.display = 'none';
-            gameIframe.src = '';
-            document.querySelector('.button-container').style.display = 'flex';
-            document.querySelector('h1').style.display = 'block';
-            document.querySelectorAll('h2').forEach((h2) => {
-                h2.style.textAlign = 'center';
-            });
-        }
-
-        // Attach event listeners to buttons
-        document.querySelectorAll('.game-button').forEach(button => {
-            button.addEventListener('click', function() {
-                const gameUrl = this.getAttribute('data-url');
-                loadGameInIframe(gameUrl);
-            });
-        });
-    </script>
-</body>
+            <p>
+        </main>
+             
+        <script src="cdn.jsdelivr.net"></script>
+        <script src="scripts.js"></script>
+    </body>
 </html>
